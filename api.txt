@@ -535,7 +535,7 @@ ThemeManager                                                   called packages a
   ::getUserStylesheetPath()                                    0      0        0
   ::requireStylesheet(stylesheetPath, type, htmlElement)       0      0        0
 
-WorkspaceView                                                  called packages atom packages
+Workspace                                                      called packages atom packages
   ::getActiveView()                                            96     61       8
   ::eachEditorView(callback)                                   89     79       10
   ::prependToBottom(element)                                   34     31       3
@@ -555,8 +555,6 @@ WorkspaceView                                                  called packages a
   ::prependToLeft(element)                                     0      0        0
   ::prependToRight(element)                                    0      0        0
   ::focusPaneViewAbove()                                       0      0        1
-
-Workspace                                                      called packages atom packages
   ::open(uri, options)                                         ∞      0        0
   ::getActiveEditor()                                          318    191      13
   ::getActivePaneItem()                                        108    55       10
