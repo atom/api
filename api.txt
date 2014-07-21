@@ -536,17 +536,11 @@ ThemeManager                                                   called packages a
   ::requireStylesheet(stylesheetPath, type, htmlElement)       0      0        0
 
 Workspace                                                      called packages atom packages
-  ::getActiveView()                                            96     61       8
-  ::eachEditorView(callback)                                   89     79       10
   ::prependToBottom(element)                                   34     31       3
   ::appendToBottom(element)                                    12     10       1
   ::appendToTop(element)                                       10     7        1
   ::appendToRight(element)                                     9      8        1
-  ::getActivePaneView()                                        7      7        4
-  ::getModel()                                                 3      3        1
   ::prependToTop(element)                                      2      2        0
-  ::eachPaneView(callback)                                     2      2        2
-  ::getPaneViews()                                             2      2        1
   ::appendToLeft(element)                                      1      1        1
   ::installShellCommands()                                     0      0        0
   ::focusPaneViewBelow()                                       0      0        1
