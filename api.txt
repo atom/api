@@ -1,0 +1,757 @@
+called        = number of times a third party package calls the method
+packages      = number of third party package that call the method
+atom packages = number of packages from the atom org that call the method
+
+window.coffee                                                  called packages atom packages
+  window.measure(description, fn)                              0      0        0
+  window.profile(description, fn)                              0      0        0
+
+space-pen.coffee                                               called packages atom packages
+  $.fn.handlers(eventName)                                     0      0        0
+
+Atom                                                           called packages atom packages
+  ::beep()                                                     26     14       4
+  ::confirm(message, detailedMessage, buttons)                 24     9        1
+  ::getConfigDirPath()                                         14     11       4
+  ::open(options)                                              6      6        4
+  ::inDevMode()                                                6      3        2
+  ::getWindowDimensions()                                      4      2        0
+  ::getLoadSettings()                                          4      3        6
+  ::getVersion()                                               4      4        4
+  ::getCurrentWindow()                                         4      1        1
+  ::initialize()                                               4      2        0
+  ::inSpecMode()                                               3      2        1
+  ::close()                                                    3      3        0
+  ::focus()                                                    3      1        1
+  ::setWindowDimensions(x, y, width, height)                   2      2        0
+  ::reload()                                                   1      1        0
+  ::openDevTools()                                             1      1        0
+  ::getWindowLoadTime()                                        1      1        2
+  ::setSize(width, height)                                     0      0        0
+  .loadOrCreate(mode)                                          0      0        0
+  ::toggleDevTools()                                           0      0        0
+  ::show()                                                     0      0        0
+  ::toggleFullScreen()                                         0      0        0
+  ::setFullScreen(fullScreen)                                  0      0        0
+  ::isFullScreen()                                             0      0        0
+  ::hide()                                                     0      0        0
+  ::isReleasedVersion()                                        0      0        2
+  ::executeJavaScriptInDevTools(code)                          0      0        0
+  ::setPosition(x, y)                                          0      0        0
+  ::center()                                                   0      0        0
+  ::requireWithGlobals(id, globals)                            0      0        0
+
+BufferedNodeProcess                                            called packages atom packages
+  ::constructor(command, args, options, stdout, stderr, exit)  2      2        0
+
+BufferedProcess                                                called packages atom packages
+  ::constructor(command, args, options, stdout, stderr, exit)  50     36       5
+  ::kill()                                                     40     26       0
+
+Clipboard                                                      called packages atom packages
+  ::write(text, metadata)                                      18     16       5
+  ::read()                                                     9      6        1
+  ::readWithMetadata()                                         3      2        0
+
+Config                                                         called packages atom packages
+  ::get(keyPath)                                               732    250      21
+  ::observe(keyPath, options, callback)                        149    80       10
+  ::set(keyPath, value)                                        70     30       4
+  ::unobserve(keyPath)                                         38     26       0
+  ::toggle(keyPath)                                            9      4        2
+  ::getSettings()                                              8      6        1
+  ::getDefault(keyPath)                                        5      3        1
+  ::getPositiveInt(keyPath, defaultValue)                      4      4        2
+  ::getInt(keyPath)                                            2      2        0
+  ::getUserConfigPath()                                        1      1        0
+  ::pushAtKeyPath(keyPath, value)                              0      0        0
+  ::unshiftAtKeyPath(keyPath, value)                           0      0        0
+  ::removeAtKeyPath(keyPath, value)                            0      0        0
+  ::isDefault(keyPath)                                         0      0        1
+  ::restoreDefault(keyPath)                                    0      0        0
+
+ContextMenuManager                                             called packages atom packages
+  ::add(name, object, undefined)                               0      0        0
+  ::showForEvent(event)                                        0      0        0
+
+Cursor                                                         called packages atom packages
+  ::getBufferPosition()                                        51     24       5
+  ::getBufferRow()                                             24     14       3
+  ::setBufferPosition(bufferPosition, options)                 18     9        3
+  ::getScreenPosition()                                        17     7        0
+  ::getCurrentBufferLine()                                     17     15       1
+  ::isVisible()                                                10     9        4
+  ::getCurrentWordPrefix()                                     8      2        1
+  ::getBufferColumn()                                          7      5        2
+  ::getCurrentWordBufferRange(options)                         5      4        3
+  ::clearSelection()                                           4      3        0
+  ::getScreenRow()                                             4      4        1
+  ::moveLeft(moveToEndOfSelection)                             4      4        1
+  ::moveUp(rowCount, undefined)                                4      4        0
+  ::moveDown(rowCount, undefined)                              3      2        1
+  ::moveToBeginningOfLine()                                    2      1        1
+  ::moveRight(moveToEndOfSelection)                            2      2        1
+  ::isAtBeginningOfLine()                                      2      1        1
+  ::getBeginningOfCurrentWordBufferPosition(options)           2      2        1
+  ::moveToEndOfLine()                                          2      2        0
+  ::setScreenPosition(screenPosition, options)                 2      2        0
+  ::getScopes()                                                2      2        1
+  ::getCurrentParagraphBufferRange()                           2      2        1
+  ::getScreenColumn()                                          1      1        0
+  ::hasPrecedingCharactersOnLine()                             1      1        0
+  ::isAtEndOfLine()                                            1      1        1
+  ::getCurrentLineBufferRange(options)                         1      1        0
+  ::getEndOfCurrentWordBufferPosition(options)                 1      1        1
+  ::moveToFirstCharacterOfLine()                               1      1        0
+  ::moveToNextWordBoundary()                                   1      1        1
+  ::moveToEndOfWord()                                          1      1        1
+  ::isInsideWord()                                             1      1        0
+  ::moveToBeginningOfWord()                                    1      1        0
+  ::moveToBeginningOfScreenLine()                              0      0        0
+  ::moveToEndOfScreenLine()                                    0      0        0
+  ::moveToPreviousWordBoundary()                               0      0        0
+  ::skipLeadingWhitespace()                                    0      0        1
+  ::isBetweenWordAndNonWord()                                  0      0        0
+  ::moveToTop()                                                0      0        0
+  ::getMoveNextWordBoundaryBufferPosition(options)             0      0        1
+  ::clearAutoscroll()                                          0      0        0
+  ::getBeginningOfNextWordBufferPosition(options)              0      0        1
+  ::isSurroundedByWhitespace()                                 0      0        0
+  ::moveToBeginningOfNextWord()                                0      0        1
+  ::moveToBeginningOfNextParagraph()                           0      0        0
+  ::moveToBeginningOfPreviousParagraph()                       0      0        0
+  ::isLastCursor()                                             0      0        0
+  ::wordRegExp(includeNonWordCharacters)                       0      0        0
+  ::setVisible(visible)                                        0      0        0
+  ::getIndentLevel()                                           0      0        0
+  ::moveToBottom()                                             0      0        0
+  ::updateVisibility()                                         0      0        0
+  ::getPreviousWordBoundaryBufferPosition(options)             0      0        0
+
+Decoration                                                     called packages atom packages
+  ::destroy()                                                  ∞      0        0
+  ::update(newParams)                                          ∞      0        0
+  ::getMarker()                                                1      1        0
+  ::getParams()                                                0      0        0
+  ::isType(type)                                               0      0        0
+
+DeserializerManager                                            called packages atom packages
+  ::add(classes...)                                            34     25       7
+  ::deserialize(state, params)                                 4      2        0
+  ::remove(classes...)                                         0      0        0
+
+EditorView                                                     called packages atom packages
+  ::getEditor()                                                172    75       7
+  ::pixelPositionForScreenPosition(position)                   26     16       3
+  ::pixelPositionForBufferPosition(position)                   19     8        1
+  ::getPane()                                                  19     16       6
+  ::splitRight()                                               14     11       1
+  ::setPlaceholderText(placeholderText)                        13     9        1
+  ::scrollToBufferPosition(bufferPosition, options)            12     10       4
+  ::getFirstVisibleScreenRow()                                 10     8        1
+  ::getLastVisibleScreenRow()                                  10     8        1
+  ::scrollToBottom()                                           9      7        0
+  ::splitDown()                                                7      6        1
+  ::redraw()                                                   3      3        2
+  ::setSoftWrap(softWrap)                                      2      2        0
+  ::splitUp()                                                  2      2        1
+  ::splitLeft()                                                2      2        1
+  ::scrollToScreenPosition(screenPosition, options)            2      2        1
+  ::getFontSize()                                              1      1        0
+  ::setShowInvisibles(showInvisibles)                          1      1        0
+  ::setFontFamily(fontFamily)                                  1      1        0
+  ::setShowIndentGuide(showIndentGuide)                        1      1        0
+  ::setLineHeight(lineHeight)                                  1      1        0
+  ::pageUp()                                                   1      1        0
+  ::setInvisibles(invisibles)                                  1      1        0
+  ::setFontSize(fontSize)                                      1      1        1
+  ::getFontFamily()                                            0      0        0
+  ::pageDown()                                                 0      0        0
+  ::toggleSoftWrap()                                           0      0        0
+  ::toggleSoftTabs()                                           0      0        0
+  ::highlightFoldsContainingBufferRange(bufferRange)           0      0        0
+  ::scrollToPixelPosition(pixelPosition, options)              0      0        0
+  ::isScreenRowVisible(row)                                    0      0        0
+  ::scrollToCursorPosition()                                   0      0        1
+
+Editor                                                         called packages atom packages
+  ::getText()                                                  ∞      0        0
+  ::getPath()                                                  403    159      17
+  ::insertText(text, options)                                  390    103      5
+  ::insertNewlineBelow()                                       189    5        1
+  ::setText(text)                                              121    72       8
+  ::getSelection(index)                                        114    71       6
+  ::getGrammar()                                               113    76       6
+  ::getCursor()                                                103    43       6
+  ::getCursorBufferPosition()                                  88     47       8
+  ::getUri()                                                   74     40       5
+  ::setCursorBufferPosition(position, options)                 69     53       6
+  ::getSelectedText()                                          59     46       3
+  ::getTitle()                                                 56     35       4
+  ::getTextInBufferRange(range)                                51     34       5
+  ::setTextInBufferRange(range, text, normalizeLineEndings)    49     31       4
+  ::lineLengthForBufferRow(row)                                36     24       3
+  ::getCursors()                                               35     19       4
+  ::getSelections()                                            34     20       1
+  ::delete()                                                   33     20       3
+  ::save()                                                     31     17       1
+  ::lineForBufferRow(row)                                      31     11       2
+  ::transact(fn)                                               28     15       7
+  ::getSelectedBufferRange()                                   26     23       5
+  ::setSelectedBufferRanges(bufferRanges, options)             22     10       3
+  ::setSelectedBufferRange(bufferRange, options)               21     20       8
+  ::indentationForBufferRow(bufferRow)                         21     4        0
+  ::getSelectedBufferRanges()                                  18     14       2
+  ::moveCursorLeft()                                           18     5        2
+  ::getCursorScreenPosition()                                  18     14       3
+  ::undo()                                                     17     3        1
+  ::getWordUnderCursor(options)                                17     9        0
+  ::redo()                                                     16     2        0
+  ::insertNewline()                                            16     10       0
+  ::moveCursorToBeginningOfLine()                              14     7        1
+  ::getCursorScopes()                                          11     11       2
+  ::scopesForBufferPosition(bufferPosition)                    11     11       2
+  ::addSelectionForBufferRange(bufferRange, options)           10     6        1
+  ::transpose()                                                10     6        0
+  ::selectLine()                                               10     8        1
+  ::moveCursorDown(lineCount)                                  10     8        1
+  ::selectWord()                                               10     6        2
+  ::beginTransaction()                                         10     8        2
+  ::moveCursorUp(lineCount)                                    10     6        1
+  ::moveCursorToEndOfLine()                                    9      7        1
+  ::getTabLength()                                             9      6        0
+  ::selectToEndOfLine()                                        9      5        1
+  ::setGrammar(grammar)                                        9      7        1
+  ::cutSelectedText()                                          9      6        0
+  ::moveCursorToFirstCharacterOfLine()                         8      7        5
+  ::setSoftTabs(softTabs)                                      8      5        0
+  ::getLineCount()                                             8      6        3
+  ::setCursorScreenPosition(position, options)                 8      5        1
+  ::setTabLength(tabLength)                                    8      5        0
+  ::selectAll()                                                7      6        2
+  ::selectLeft()                                               7      1        1
+  ::screenRangeForBufferRange(bufferRange)                     7      6        1
+  ::markBufferRange(args...)                                   7      5        6
+  ::copySelectedText()                                         6      5        0
+  ::screenPositionForBufferPosition(bufferPosition, options)   6      2        1
+  ::selectDown(rowCount)                                       6      5        1
+  ::commitTransaction()                                        5      4        1
+  ::isBufferRowCommented(bufferRow)                            5      3        0
+  ::backspace()                                                5      5        1
+  ::deleteLine()                                               4      4        0
+  ::bufferRangeForScopeAtCursor(selector)                      4      4        0
+  ::selectUp(rowCount)                                         4      4        1
+  ::getTabText()                                               4      4        0
+  ::abortTransaction()                                         4      4        1
+  ::getCursorScreenRow()                                       4      4        1
+  ::bufferPositionForScreenPosition(screenPosition, options)   4      3        0
+  ::moveCursorToBottom()                                       4      1        0
+  ::markScreenRange(args...)                                   4      3        1
+  ::clipBufferPosition(bufferPosition)                         3      1        1
+  ::setIndentationForBufferRow(bufferRow, newLevel, undefined) 3      2        0
+  ::indentLevelForLine(line)                                   3      1        0
+  ::getLastBufferRow()                                         3      2        1
+  ::autoIndentSelectedRows()                                   3      3        1
+  ::insertNewlineAbove()                                       2      2        1
+  ::mutateSelectedText(fn)                                     2      2        1
+  ::isFoldedAtBufferRow(bufferRow)                             2      1        1
+  ::setSoftWrap(softWrap)                                      2      2        0
+  ::selectToEndOfWord()                                        2      1        1
+  ::selectToBeginningOfWord()                                  2      2        1
+  ::hasMultipleCursors()                                       2      2        1
+  ::selectRight()                                              2      1        1
+  ::selectToScreenPosition(position)                           2      2        1
+  ::moveCursorToTop()                                          2      2        0
+  ::addCursorAtBufferPosition(bufferPosition)                  2      2        0
+  ::getCurrentParagraphBufferRange()                           2      2        1
+  ::toggleLineCommentsInSelection()                            2      2        0
+  ::findMarkers(properties)                                    2      2        3
+  ::pasteText(options)                                         2      2        0
+  ::getSelectionsOrderedByBufferPosition()                     2      1        0
+  ::getLastSelection()                                         2      2        0
+  ::markBufferPosition(args...)                                2      2        0
+  ::getSoftWrap()                                              1      1        1
+  ::deleteToEndOfWord()                                        1      1        0
+  ::moveCursorRight()                                          1      1        2
+  ::clipScreenPosition(screenPosition, options)                1      1        0
+  ::bufferRangeForScreenRange(screenRange)                     1      1        1
+  ::moveCursorToBeginningOfWord()                              1      1        1
+  ::moveCursorToBeginningOfNextWord()                          1      1        1
+  ::saveAs(filePath)                                           1      1        0
+  ::getSelectedScreenRange()                                   1      1        0
+  ::selectToBeginningOfLine()                                  1      1        1
+  ::selectToFirstCharacterOfLine()                             1      1        1
+  ::upperCase()                                                1      1        0
+  ::lowerCase()                                                1      1        0
+  ::getMarkers()                                               1      1        0
+  ::getMarker(id)                                              1      1        0
+  ::selectMarker(marker)                                       1      1        0
+  ::getLongTitle()                                             1      1        1
+  ::deleteToEndOfLine()                                        0      0        0
+  ::deleteToBeginningOfLine()                                  0      0        0
+  ::deleteToBeginningOfWord()                                  0      0        0
+  ::selectionIntersectsBufferRange(bufferRange)                0      0        0
+  ::addCursorAtScreenPosition(screenPosition)                  0      0        0
+  ::decorationsForScreenRowRange(startScreenRow, endScreenRow) 0      0        0
+  ::moveCursorToBeginningOfScreenLine()                        0      0        0
+  ::foldAll()                                                  0      0        0
+  ::foldSelectedLines()                                        0      0        0
+  ::moveCursorToEndOfScreenLine()                              0      0        0
+  ::shouldPromptToSave()                                       0      0        0
+  ::unfoldCurrentRow()                                         0      0        0
+  ::moveCursorToEndOfWord()                                    0      0        0
+  ::foldCurrentRow()                                           0      0        0
+  ::moveCursorToPreviousWordBoundary()                         0      0        0
+  ::moveCursorToNextWordBoundary()                             0      0        0
+  ::foldAllAtIndentLevel(level)                                0      0        0
+  ::moveCursorToBeginningOfPreviousParagraph()                 0      0        0
+  ::toggleFoldAtBufferRow(bufferRow)                           0      0        0
+  ::isFoldedAtCursorRow()                                      0      0        1
+  ::getMarkerCount()                                           0      0        0
+  ::foldBufferRow(bufferRow)                                   0      0        0
+  ::unfoldAll()                                                0      0        0
+  ::selectToTop()                                              0      0        0
+  ::markScreenPosition(args...)                                0      0        0
+  ::selectToBottom()                                           0      0        0
+  ::cutToEndOfLine()                                           0      0        0
+  ::setSelectedScreenRange(screenRange, options)               0      0        0
+  ::clipBufferRange(range)                                     0      0        0
+  ::selectToPreviousWordBoundary()                             0      0        0
+  ::selectToNextWordBoundary()                                 0      0        0
+  ::isFoldedAtScreenRow(screenRow)                             0      0        0
+  ::addSelectionBelow()                                        0      0        0
+  ::addSelectionAbove()                                        0      0        0
+  ::splitSelectionsIntoLines()                                 0      0        0
+  ::usesSoftTabs()                                             0      0        0
+  ::getSelectedScreenRanges()                                  0      0        0
+  ::unfoldBufferRow(bufferRow)                                 0      0        0
+  ::outdentSelectedRows()                                      0      0        1
+  ::indentSelectedRows()                                       0      0        1
+  ::selectToBeginningOfNextWord()                              0      0        1
+  ::toggleSoftWrap()                                           0      0        0
+  ::selectToBeginningOfNextParagraph()                         0      0        0
+  ::selectToBeginningOfPreviousParagraph()                     0      0        0
+  ::isFoldableAtBufferRow(bufferRow)                           0      0        0
+  ::decorateMarker(marker, decorationParams)                   0      0        0
+  ::getLastSelectionInBuffer()                                 0      0        0
+  ::toggleSoftTabs()                                           0      0        0
+  ::getSoftTabs()                                              0      0        0
+  ::getSoftWrapColumn()                                        0      0        0
+  ::moveCursorToBeginningOfNextParagraph()                     0      0        0
+
+Git                                                            called packages atom packages
+  ::destroy()                                                  ∞      0        0
+  ::getPath()                                                  403    159      17
+  ::relativize(path)                                           28     16       5
+  ::getWorkingDirectory()                                      17     8        1
+  ::getOriginUrl(path)                                         9      7        0
+  ::isStatusModified(status)                                   3      3        3
+  ::getPathStatus(path)                                        3      3        1
+  ::getConfigValue(key, path)                                  3      3        1
+  ::getShortHead(path)                                         3      3        2
+  ::getCachedPathStatus(path)                                  2      2        3
+  ::isStatusNew(status)                                        2      2        3
+  ::getReferences(path)                                        2      2        0
+  ::getUpstreamBranch(path)                                    2      1        0
+  ::isPathIgnored(path)                                        2      2        3
+  .open(path, options)                                         2      2        1
+  ::isPathModified(path)                                       1      1        0
+  ::hasBranch(branch)                                          1      1        0
+  ::isPathNew(path)                                            1      1        0
+  ::getLineDiffs(path, text)                                   1      1        1
+  ::isProjectAtRoot()                                          1      1        2
+  ::getDirectoryStatus(directoryPath)                          0      0        1
+  ::isSubmodule(path)                                          0      0        1
+  ::getReferenceTarget(reference, path)                        0      0        0
+  ::getDiffStats(path)                                         0      0        1
+  ::getAheadBehindCount(reference, path)                       0      0        0
+  ::getCachedUpstreamAheadBehindCount(path)                    0      0        1
+  ::checkoutHead(path)                                         0      0        0
+  ::checkoutReference(reference, create)                       0      0        0
+
+MenuManager                                                    called packages atom packages
+  ::add(items)                                                 5      5        0
+  ::update()                                                   3      3        0
+
+PackageManager                                                 called packages atom packages
+  ::getLoadedPackage(name)                                     49     36       1
+  ::resolvePackagePath(name)                                   12     7        2
+  ::isPackageLoaded(name)                                      7      3        1
+  ::getAvailablePackageNames()                                 7      4        0
+  ::isPackageDisabled(name)                                    6      5        1
+  ::getApmPath()                                               5      5        3
+  ::disablePackage(name)                                       4      3        1
+  ::isPackageActive(name)                                      3      2        1
+  ::getLoadedPackages()                                        3      3        5
+  ::getAvailablePackagePaths()                                 3      3        0
+  ::getActivePackages()                                        2      2        2
+  ::enablePackage(name)                                        2      2        1
+  ::getActivePackage(name)                                     1      1        1
+  ::getPackageDirPaths()                                       1      1        0
+  ::isBundledPackage(name)                                     1      1        1
+  ::getAvailablePackageMetadata()                              0      0        0
+
+PaneView                                                       called packages atom packages
+  ::getNextPane()                                              2      2        0
+  ::getContainer()                                             1      1        1
+
+Pane                                                           called packages atom packages
+  ::getActiveEditor()                                          318    191      13
+  ::activate()                                                 92     61       2
+  ::destroyItem(item)                                          28     15       3
+  ::getItems()                                                 18     14       2
+  ::splitRight(params)                                         14     11       1
+  ::itemForUri(uri)                                            13     10       1
+  ::addItem(item, index)                                       10     9        0
+  ::getActiveItem()                                            8      6        0
+  ::splitDown(params)                                          7      6        1
+  ::activateNextItem()                                         4      3        0
+  ::moveItem(item, newIndex)                                   3      2        1
+  ::moveItemToPane(item, pane, index)                          3      3        1
+  ::addItems(items, index)                                     2      2        0
+  ::splitUp(params)                                            2      2        1
+  ::splitLeft(params)                                          2      2        1
+  ::activateItemForUri(uri)                                    2      2        0
+  ::destroyActiveItem()                                        1      1        0
+  ::destroyItems()                                             1      1        0
+  ::promptToSaveItem(item)                                     1      1        0
+  ::saveItemAs(item, nextAction)                               0      0        0
+  ::saveItems()                                                0      0        0
+  ::saveActiveItemAs()                                         0      0        0
+  ::saveActiveItem()                                           0      0        0
+  ::destroyInactiveItems()                                     0      0        0
+  ::itemAtIndex(index)                                         0      0        1
+  ::activatePreviousItem()                                     0      0        0
+  ::saveItem(item, nextAction)                                 0      0        0
+
+Project                                                        called packages atom packages
+  ::resolve(uri)                                               ∞      0        0
+  ::contains(pathToCheck)                                      ∞      0        0
+  ::replace(regex, replacementText, filePaths, iterator)       ∞      0        0
+  ::getPath()                                                  403    159      17
+  ::scan(regex, options, iterator)                             65     9        2
+  ::getRepo()                                                  58     23       5
+  ::relativize(fullPath)                                       28     16       5
+  ::getRootDirectory()                                         25     17       1
+  ::setPath(projectPath)                                       9      8        0
+  .pathForRepositoryUrl(repoUrl)                               0      0        0
+
+ScrollView                                                     called packages atom packages
+
+SelectListView                                                 called packages atom packages
+  ::initialize()                                               48     21       0
+  ::cancel()                                                   41     14       2
+  ::setItems(items)                                            23     14       0
+  ::focusFilterEditor()                                        11     8        0
+  ::viewForItem(item)                                          11     8        0
+  ::populateList()                                             10     4        0
+  ::confirmed(item)                                            10     9        0
+  ::getFilterKey()                                             7      6        0
+  ::setError(message)                                          6      4        0
+  ::getSelectedItem()                                          3      3        0
+  ::storeFocusedElement()                                      3      2        0
+  ::getEmptyMessage(itemCount, filteredItemCount)              2      1        0
+  ::getFilterQuery()                                           2      1        0
+  ::setLoading(message)                                        1      1        0
+  ::setMaxItems(maxItems)                                      1      1        0
+
+Selection                                                      called packages atom packages
+  ::merge(otherSelection, options)                             ∞      0        0
+  ::clear()                                                    ∞      0        0
+  ::getText()                                                  ∞      0        0
+  ::insertText(text, options)                                  390    103      5
+  ::fold()                                                     104    101      6
+  ::isEmpty()                                                  96     45       6
+  ::compare(otherSelection)                                    90     5        2
+  ::getBufferRange()                                           52     23       6
+  ::copy(maintainClipboard)                                    34     14       3
+  ::delete()                                                   33     20       3
+  ::getScreenRange()                                           11     6        1
+  ::selectWord()                                               10     6        2
+  ::selectLine(row)                                            10     8        1
+  ::selectToEndOfLine()                                        9      5        1
+  ::deleteSelectedText()                                       9      8        1
+  ::intersectsWith(otherSelection)                             8      8        1
+  ::selectAll()                                                7      6        2
+  ::selectLeft()                                               7      1        1
+  ::selectDown(rowCount)                                       6      5        1
+  ::setBufferRange(bufferRange, options)                       6      5        1
+  ::backspace()                                                5      5        1
+  ::selectUp(rowCount)                                         4      4        1
+  ::deleteLine()                                               4      4        0
+  ::autoIndentSelectedRows()                                   3      3        1
+  ::selectToEndOfWord()                                        2      1        1
+  ::selectToBufferPosition(position)                           2      2        1
+  ::selectToBeginningOfWord()                                  2      2        1
+  ::selectRight()                                              2      1        1
+  ::getBufferRowRange()                                        2      2        0
+  ::selectToScreenPosition(position)                           2      2        1
+  ::joinLines()                                                1      1        1
+  ::deleteToEndOfWord()                                        1      1        0
+  ::cut(maintainClipboard)                                     1      1        0
+  ::isReversed()                                               1      1        2
+  ::selectToFirstCharacterOfLine()                             1      1        1
+  ::selectToBeginningOfLine()                                  1      1        1
+  ::isSingleScreenLine()                                       1      1        0
+  ::indentSelectedRows()                                       0      0        1
+  ::setIndentationForLine(line, indentLevel)                   0      0        0
+  ::selectToTop()                                              0      0        0
+  ::deleteToBeginningOfWord()                                  0      0        0
+  ::deleteToBeginningOfLine()                                  0      0        0
+  ::selectToBottom()                                           0      0        0
+  ::deleteToEndOfLine()                                        0      0        0
+  ::expandOverWord()                                           0      0        0
+  ::selectToBeginningOfNextWord()                              0      0        1
+  ::selectToPreviousWordBoundary()                             0      0        0
+  ::selectToNextWordBoundary()                                 0      0        0
+  ::outdentSelectedRows()                                      0      0        1
+  ::selectToBeginningOfNextParagraph()                         0      0        0
+  ::toggleLineComments()                                       0      0        0
+  ::cutToEndOfLine(maintainClipboard)                          0      0        0
+  ::selectToBeginningOfPreviousParagraph()                     0      0        0
+  ::expandOverLine()                                           0      0        0
+  ::addSelectionAbove()                                        0      0        0
+  ::intersectsBufferRange(bufferRange)                         0      0        0
+  ::setScreenRange(screenRange, options)                       0      0        0
+  ::normalizeIndents(text, indentBasis)                        0      0        0
+  ::addSelectionBelow()                                        0      0        0
+
+Syntax                                                         called packages atom packages
+  ::getProperty(scope, keyPath)                                2      1        0
+
+Task                                                           called packages atom packages
+  ::start(args..., callback)                                   ∞      0        0
+  ::send(message)                                              ∞      0        0
+  ::terminate()                                                6      3        3
+  .once(taskPath, args...)                                     4      4        2
+  ::constructor(taskPath)                                      0      0        1
+
+ThemeManager                                                   called packages atom packages
+  ::setEnabledThemes(enabledThemeNames)                        2      1        1
+  ::getLoadedThemes()                                          1      1        2
+  ::getLoadedNames()                                           0      0        0
+  ::getActiveNames()                                           0      0        0
+  ::getActiveThemes()                                          0      0        3
+  ::getUserStylesheetPath()                                    0      0        0
+  ::requireStylesheet(stylesheetPath, type, htmlElement)       0      0        0
+
+WorkspaceView                                                  called packages atom packages
+  ::getActiveView()                                            96     61       8
+  ::eachEditorView(callback)                                   89     79       10
+  ::prependToBottom(element)                                   34     31       3
+  ::appendToBottom(element)                                    12     10       1
+  ::appendToTop(element)                                       10     7        1
+  ::appendToRight(element)                                     9      8        1
+  ::getActivePaneView()                                        7      7        4
+  ::getModel()                                                 3      3        1
+  ::prependToTop(element)                                      2      2        0
+  ::eachPaneView(callback)                                     2      2        2
+  ::getPaneViews()                                             2      2        1
+  ::appendToLeft(element)                                      1      1        1
+  ::installShellCommands()                                     0      0        0
+  ::focusPaneViewBelow()                                       0      0        1
+  ::focusPaneViewOnLeft()                                      0      0        1
+  ::focusPaneViewOnRight()                                     0      0        1
+  ::prependToLeft(element)                                     0      0        0
+  ::prependToRight(element)                                    0      0        0
+  ::focusPaneViewAbove()                                       0      0        1
+
+Workspace                                                      called packages atom packages
+  ::open(uri, options)                                         ∞      0        0
+  ::getActiveEditor()                                          318    191      13
+  ::getActivePaneItem()                                        108    55       10
+  ::getActivePane()                                            85     51       2
+  ::eachEditor(callback)                                       55     38       4
+  ::registerOpener(opener)                                     41     40       10
+  ::paneForUri(uri)                                            32     20       1
+  ::getEditors()                                               25     21       2
+  ::getPanes()                                                 14     11       2
+  ::activatePreviousPane()                                     5      3        0
+  ::unregisterOpener(opener)                                   3      3        1
+  ::saveActivePaneItem()                                       2      2        0
+  ::destroyActivePaneItem()                                    1      1        0
+  ::destroyActivePane()                                        1      1        0
+  ::activateNextPane()                                         1      1        0
+  ::saveActivePaneItemAs()                                     0      0        0
+  ::saveAll()                                                  0      0        0
+  ::reopenItem()                                               0      0        0
+  ::openLicense()                                              0      0        0
+  ::increaseFontSize()                                         0      0        0
+  ::decreaseFontSize()                                         0      0        0
+  ::resetFontSize()                                            0      0        0
+
+Grammar                                                        called packages atom packages
+  ::tokenizeLines(text)                                        8      8        2
+  ::tokenizeLine(line, ruleStack, firstLine)                   0      0        0
+
+GrammarRegistry                                                called packages atom packages
+  ::selectGrammar(filePath, fileContents)                      8      8        1
+  ::grammarForScopeName(scopeName)                             5      4        1
+  ::addGrammar(grammar)                                        2      2        0
+  ::removeGrammarForScopeName(scopeName)                       1      1        0
+  ::loadGrammarSync(grammarPath)                               1      1        0
+  ::setGrammarOverrideForPath(filePath, scopeName)             1      1        1
+  ::readGrammar(grammarPath, callback)                         0      0        0
+  ::readGrammarSync(grammarPath)                               0      0        0
+  ::loadGrammar(grammarPath, callback)                         0      0        0
+  ::grammarOverrideForPath(filePath)                           0      0        0
+  ::removeGrammar(grammar)                                     0      0        0
+  ::clearGrammarOverrideForPath(filePath)                      0      0        1
+  ::clearGrammarOverrides()                                    0      0        0
+  ::getGrammars()                                              0      0        1
+
+Directory                                                      called packages atom packages
+  ::contains(pathToCheck)                                      ∞      0        0
+  ::getPath()                                                  403    159      17
+  ::isFile()                                                   38     19       2
+  ::isDirectory()                                              30     17       2
+  ::relativize(fullPath)                                       28     16       5
+  ::getBaseName()                                              11     6        1
+  ::getRealPathSync()                                          11     3        0
+  ::constructor(path, symlink)                                 5      2        2
+  ::getEntries(callback)                                       5      3        0
+  ::getEntriesSync()                                           4      4        1
+  ::getFile(filename...)                                       1      1        1
+  ::isRoot()                                                   0      0        1
+  ::getSubdirectory(dirname...)                                0      0        0
+  ::getParent()                                                0      0        0
+
+File                                                           called packages atom packages
+  ::exists()                                                   ∞      0        0
+  ::write(text)                                                ∞      0        0
+  ::getPath()                                                  403    159      17
+  ::read(flushCache)                                           51     27       3
+  ::constructor(path, symlink)                                 40     22       6
+  ::isFile()                                                   38     19       2
+  ::isDirectory()                                              30     17       2
+  ::getRealPathSync()                                          11     3        0
+  ::getBaseName()                                              11     6        1
+  ::getParent()                                                0      0        0
+  ::getDigest()                                                0      0        0
+
+View                                                           called packages atom packages
+  ::command(commandName, selector, options, handler)           1309   504      32
+  ::preempt(eventName, handler)                                7      7        4
+  .text(string)                                                4      3        0
+  .tag(tagName, args...)                                       1      1        0
+  .subview(name, view)                                         0      0        0
+  .raw(string)                                                 0      0        0
+
+Marker                                                         called packages atom packages
+  ::destroy()                                                  ∞      0        0
+  ::compare(other)                                             90     5        2
+  ::copy(params)                                               34     14       3
+  ::isEqual(other)                                             32     12       3
+  ::getRange()                                                 29     11       3
+  ::isValid()                                                  17     6        4
+  ::getEndPosition()                                           6      6        2
+  ::getStartPosition()                                         2      2        2
+  ::isReversed()                                               1      1        2
+  ::plantTail(properties)                                      0      0        0
+  ::setRange(range, properties)                                0      0        0
+  ::hasTail()                                                  0      0        0
+  ::setTailPosition(position, properties)                      0      0        0
+  ::clearTail(properties)                                      0      0        0
+  ::getTailPosition()                                          0      0        0
+  ::getInvalidationStrategy()                                  0      0        0
+  ::getProperties()                                            0      0        0
+  ::setProperties(properties)                                  0      0        0
+  ::setHeadPosition(position, properties)                      0      0        0
+  ::getHeadPosition()                                          0      0        0
+  ::isDestroyed()                                              0      0        1
+
+Point                                                          called packages atom packages
+  ::toString()                                                 ∞      0        0
+  ::translate(delta)                                           ∞      0        0
+  ::serialize()                                                144    124      3
+  ::compare(other)                                             90     5        2
+  ::toArray()                                                  36     20       5
+  ::copy()                                                     34     14       3
+  ::isEqual(other)                                             32     12       3
+  ::isGreaterThan(other)                                       13     8        3
+  ::freeze()                                                   11     4        0
+  ::isLessThan(other)                                          9      8        2
+  .fromObject(object, copy)                                    5      2        0
+  .min(point1, point2)                                         2      2        0
+  ::isGreaterThanOrEqual(other)                                1      1        0
+  ::isLessThanOrEqual(other)                                   1      1        0
+
+Range                                                          called packages atom packages
+  ::toString()                                                 ∞      0        0
+  ::serialize()                                                144    124      3
+  ::isEmpty()                                                  96     45       6
+  ::compare(other)                                             90     5        2
+  ::copy()                                                     34     14       3
+  ::isEqual(other)                                             32     12       3
+  ::union(otherRange)                                          25     12       0
+  .fromPointWithDelta(startPoint, rowDelta, columnDelta)       20     15       4
+  ::freeze()                                                   11     4        0
+  ::intersectsWith(otherRange)                                 8      8        1
+  ::containsPoint(point, exclusive)                            6      5        1
+  .fromObject(object, copy)                                    4      3        4
+  ::intersectsRowRange(startRow, endRow)                       3      3        2
+  ::isSingleLine()                                             3      3        1
+  ::getRows()                                                  3      2        0
+  ::containsRange(otherRange, exclusive)                       0      0        0
+  ::intersectsRow(row)                                         0      0        0
+  ::coversSameRows(other)                                      0      0        0
+  ::getRowCount()                                              0      0        0
+  .deserialize(array)                                          0      0        0
+
+TextBuffer                                                     called packages atom packages
+  ::getText()                                                  ∞      0        0
+  ::replace(regex, replacementText)                            ∞      0        0
+  ::append(text, normalizeLineEndings)                         ∞      0        0
+  ::insert(position, text, normalizeLineEndings)               124    17       2
+  ::setText(text)                                              121    72       8
+  ::isEmpty()                                                  96     45       6
+  ::getUri()                                                   74     40       5
+  ::scan(regex, iterator)                                      65     9        2
+  ::delete(range)                                              33     20       3
+  ::save()                                                     31     17       1
+  ::getRange()                                                 29     11       3
+  ::getTextInRange(range)                                      28     21       5
+  ::transact(fn)                                               28     15       7
+  ::characterIndexForPosition(position)                        18     7        0
+  ::undo()                                                     17     3        1
+  ::redo()                                                     16     2        0
+  ::scanInRange(regex, range, iterator, reverse)               15     11       1
+  ::positionForCharacterIndex(offset)                          14     6        1
+  ::reload()                                                   10     4        1
+  ::beginTransaction()                                         10     8        2
+  ::setPath(filePath)                                          9      8        0
+  ::isModified()                                               9      8        3
+  ::lineForRow(row)                                            9      5        3
+  ::getLineCount()                                             8      6        3
+  ::getLines()                                                 6      4        0
+  ::getEndPosition()                                           6      6        2
+  ::commitTransaction()                                        5      4        1
+  ::abortTransaction()                                         4      4        1
+  ::getLastRow()                                               4      2        2
+  ::setTextInRange(range, text, normalizeLineEndings)          2      2        0
+  ::findMarkers(params)                                        2      2        3
+  ::getFirstPosition()                                         2      2        0
+  ::backwardsScanInRange(regex, range, iterator)               2      2        1
+  ::setTextViaDiff(text)                                       2      2        0
+  ::getMaxCharacterIndex()                                     2      2        0
+  ::backwardsScan(regex, iterator)                             1      1        1
+  ::saveAs(filePath)                                           1      1        0
+  ::rangeForRow(row, includeNewline)                           1      1        0
+  ::lineLengthForRow(row)                                      1      1        1
+  ::lineEndingForRow(row)                                      1      1        0
+  ::markRange(range, properties)                               1      1        0
+  ::getMarker(id)                                              1      1        0
+  ::getMarkers()                                               1      1        0
+  ::getLastLine()                                              0      0        0
+  ::isInConflict()                                             0      0        0
+  ::deleteRow(row)                                             0      0        1
+  ::deleteRows(startRow, endRow)                               0      0        0
+  ::constructor(params)                                        0      0        0
+  ::clipRange(range)                                           0      0        0
+  ::clearUndoStack()                                           0      0        0
+  ::clipPosition(position)                                     0      0        0
+  ::markPosition(position, properties)                         0      0        0
+  ::isRowBlank(row)                                            0      0        1
+  ::previousNonBlankRow(startRow)                              0      0        0
+  ::nextNonBlankRow(startRow)                                  0      0        0
+  ::getMarkerCount()                                           0      0        0
