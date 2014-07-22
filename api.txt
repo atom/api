@@ -392,7 +392,6 @@ PackageManager                                                 called packages a
   ::getAvailablePackageMetadata()                              0      0        0
 
 Pane                                                           called packages atom packages
-  ::getActiveEditor()                                          318    191      13
   ::activate()                                                 92     61       2
   ::destroyItem(item)                                          28     15       3
   ::getItems()                                                 18     14       2
