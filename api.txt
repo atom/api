@@ -536,41 +536,30 @@ ThemeManager                                                   called packages a
   ::requireStylesheet(stylesheetPath, type, htmlElement)       0      0        0
 
 Workspace                                                      called packages atom packages
+  ::open(uri, options)                                         ∞      0        0
+  ::getActiveEditor()                                          318    191      13
+  ::getActivePane()                                            85     51       2
+  ::eachEditor(callback)                                       55     38       4
+  ::registerOpener(opener)                                     41     40       10
   ::prependToBottom(element)                                   34     31       3
+  ::paneForUri(uri)                                            32     20       1
+  ::getEditors()                                               25     21       2
+  ::getPanes()                                                 14     11       2
   ::appendToBottom(element)                                    12     10       1
   ::appendToTop(element)                                       10     7        1
+  ::activatePreviousPane()                                     5      3        0
   ::appendToRight(element)                                     9      8        1
+  ::unregisterOpener(opener)                                   3      3        1
   ::prependToTop(element)                                      2      2        0
   ::appendToLeft(element)                                      1      1        1
-  ::installShellCommands()                                     0      0        0
+  ::destroyActivePane()                                        1      1        0
+  ::activateNextPane()                                         1      1        0
   ::focusPaneViewBelow()                                       0      0        1
   ::focusPaneViewOnLeft()                                      0      0        1
   ::focusPaneViewOnRight()                                     0      0        1
   ::prependToLeft(element)                                     0      0        0
   ::prependToRight(element)                                    0      0        0
   ::focusPaneViewAbove()                                       0      0        1
-  ::open(uri, options)                                         ∞      0        0
-  ::getActiveEditor()                                          318    191      13
-  ::getActivePaneItem()                                        108    55       10
-  ::getActivePane()                                            85     51       2
-  ::eachEditor(callback)                                       55     38       4
-  ::registerOpener(opener)                                     41     40       10
-  ::paneForUri(uri)                                            32     20       1
-  ::getEditors()                                               25     21       2
-  ::getPanes()                                                 14     11       2
-  ::activatePreviousPane()                                     5      3        0
-  ::unregisterOpener(opener)                                   3      3        1
-  ::saveActivePaneItem()                                       2      2        0
-  ::destroyActivePaneItem()                                    1      1        0
-  ::destroyActivePane()                                        1      1        0
-  ::activateNextPane()                                         1      1        0
-  ::saveActivePaneItemAs()                                     0      0        0
-  ::saveAll()                                                  0      0        0
-  ::reopenItem()                                               0      0        0
-  ::openLicense()                                              0      0        0
-  ::increaseFontSize()                                         0      0        0
-  ::decreaseFontSize()                                         0      0        0
-  ::resetFontSize()                                            0      0        0
 
 Grammar                                                        called packages atom packages
   ::tokenizeLines(text)                                        8      8        2
