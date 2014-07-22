@@ -549,18 +549,12 @@ Workspace                                                      called packages a
   ::getPanes()                                                 14     11       2
   ::appendToBottom(element)                                    12     10       1
   ::appendToTop(element)                                       10     7        1
-  ::activatePreviousPane()                                     5      3        0
   ::appendToRight(element)                                     9      8        1
   ::unregisterOpener(opener)                                   3      3        1
   ::prependToTop(element)                                      2      2        0
   ::appendToLeft(element)                                      1      1        1
-  ::activateNextPane()                                         1      1        0
-  ::focusPaneBelow()                                           0      0        1
-  ::focusPaneOnLeft()                                          0      0        1
-  ::focusPaneOnRight()                                         0      0        1
   ::prependToLeft(element)                                     0      0        0
   ::prependToRight(element)                                    0      0        0
-  ::focusPaneAbove()                                           0      0        1
 
 Grammar                                                        called packages atom packages
   ::tokenizeLines(text)                                        8      8        2
