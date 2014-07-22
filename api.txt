@@ -554,12 +554,12 @@ Workspace                                                      called packages a
   ::appendToLeft(element)                                      1      1        1
   ::destroyActivePane()                                        1      1        0
   ::activateNextPane()                                         1      1        0
-  ::focusPaneViewBelow()                                       0      0        1
-  ::focusPaneViewOnLeft()                                      0      0        1
-  ::focusPaneViewOnRight()                                     0      0        1
+  ::focusPaneBelow()                                           0      0        1
+  ::focusPaneOnLeft()                                          0      0        1
+  ::focusPaneOnRight()                                         0      0        1
   ::prependToLeft(element)                                     0      0        0
   ::prependToRight(element)                                    0      0        0
-  ::focusPaneViewAbove()                                       0      0        1
+  ::focusPaneAbove()                                           0      0        1
 
 Grammar                                                        called packages atom packages
   ::tokenizeLines(text)                                        8      8        2
