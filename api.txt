@@ -423,6 +423,7 @@ Pane                                                           called packages a
   ::itemAtIndex(index)                                         0      0        1
   ::activatePreviousItem()                                     0      0        0
   ::saveItem(item, nextAction)                                 0      0        0
+  ::destroy()                                                  new    new      new
 
 Project                                                        called packages atom packages
   ::resolve(uri)                                               ∞      0        0
