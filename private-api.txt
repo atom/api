@@ -1,0 +1,247 @@
+called        = number of times a third party package calls the method
+packages      = number of third party package that call the method
+atom packages = number of packages from the atom org that call the method
+
+Atom                               called packages atom packages
+  ::constructor                    42     29       0
+  ::showSaveDialog                 1      1        1
+  ::showSaveDialogSync             1      1        1
+
+Clipboard                          called packages atom packages
+  ::md5                            1      1        0
+
+Config                             called packages atom packages
+  ::setDefaults                    18     16       0
+  ::constructor                    4      3        0
+  ::load                           4      2        0
+
+Cursor                             called packages atom packages
+  ::destroy                        ∞      0        0
+  ::constructor                    24     4        1
+  ::getScreenRange                 11     6        1
+
+Decoration                         called packages atom packages
+  ::flash                          39     3        0
+
+EditorView                         called packages atom packages
+  ::scrollLeft                     ∞      0        0
+  ::remove                         ∞      0        0
+  ::scrollTop                      ∞      0        0
+  ::getText                        ∞      0        0
+  ::edit                           ∞      0        0
+  ::insertText                     389    101      5
+  ::setText                        182    94       10
+  ::initialize                     76     25       1
+  ::handleEvents                   22     5        0
+  ::configure                      19     5        0
+  ::appendToLinesView              16     11       2
+  ::lineElementForScreenRow        9      7        0
+  .buildLineHtml                   7      7        2
+  ::replaceSelectedText            6      5        0
+  ::scrollBottom                   5      3        1
+  ::beforeRemove                   4      2        0
+  ::screenPositionFromMouseEvent   4      3        0
+  ::getModel                       4      4        1
+  ::resetDisplay                   4      4        0
+  ::getCursorView                  3      2        0
+  ::afterAttach                    3      3        0
+  ::isHidden                       2      1        1
+  ::setModel                       2      1        0
+  ::updateDisplay                  2      2        1
+  ::toggleLineCommentsInSelection  2      2        0
+  ::getCursorViews                 2      1        0
+  ::clearLine                      2      2        0
+  ::buildLineElementsForScreenRows 1      1        0
+  ::scrollVertically               1      1        0
+  ::updateLayerDimensions          1      1        0
+  ::getPageRows                    1      1        0
+
+Editor                             called packages atom packages
+  ::isEmpty                        ∞      0        0
+  ::indent                         402    211      8
+  ::getBuffer                      297    121      17
+  ::scan                           128    31       4
+  ::constructor                    94     51       6
+  ::copy                           82     27       4
+  ::getTextInRange                 28     21       5
+  ::inspect                        27     8        0
+  ::pixelPositionForScreenPosition 25     15       3
+  ::pixelPositionForBufferPosition 19     8        1
+  ::scrollToBufferPosition         12     10       4
+  ::getEofBufferPosition           11     6        2
+  ::addSelection                   10     6        1
+  ::isModified                     8      7        3
+  ::moveCursors                    7      1        0
+  ::getScreenLineCount             6      5        0
+  ::replaceSelectedText            6      5        0
+  ::removeCursor                   6      2        0
+  ::bufferRangeForBufferRow        5      5        1
+  ::scanInBufferRange              5      5        3
+  ::clearSelections                5      2        1
+  ::backwardsScanInBufferRange     3      3        2
+  ::getLastScreenRow               3      2        0
+  ::reloadGrammar                  2      2        1
+  ::getMaxScreenLineLength         2      2        0
+  ::addCursor                      2      2        0
+  ::scrollToScreenPosition         2      2        1
+  ::backspaceToBeginningOfWord     1      1        0
+  ::pageUp                         1      1        0
+  ::subscribeToBuffer              1      1        1
+  ::joinLines                      1      1        1
+  ::expandSelectionsForward        1      1        1
+  ::duplicateLines                 1      1        0
+  ::duplicateLine                  1      1        0
+  ::getScrollTop                   1      1        0
+  ::setScrollTop                   1      1        0
+  ::getViewClass                   1      1        1
+  ::lineForScreenRow               1      1        0
+  ::tokenForBufferPosition         1      1        1
+  ::joinLine                       1      1        1
+  ::normalizeTabsInBufferRange     1      1        1
+
+Git                                called packages atom packages
+  ::getRepo                        58     23       6
+  ::constructor                    21     11       4
+  ::refreshStatus                  5      1        0
+  ::subscribeToBuffer              1      1        1
+
+PackageManager                     called packages atom packages
+  ::activate                       9      9        1
+  ::activatePackage                9      9        1
+  ::deactivatePackage              5      2        1
+  ::loadPackage                    2      2        1
+  ::unloadPackage                  1      1        1
+
+PaneView                           called packages atom packages
+  ::remove                         ∞      0        0
+  ::getActivePaneItem              106    53       10
+  ::initialize                     76     25       1
+  ::handleEvents                   22     5        0
+  ::splitRight                     14     11       1
+  ::viewForItem                    10     7        0
+  ::splitDown                      7      6        1
+  ::removeItem                     6      6        2
+  ::showItem                       4      4        0
+  ::beforeRemove                   4      2        0
+  ::afterAttach                    3      3        0
+  ::splitLeft                      2      2        1
+  ::splitUp                        2      2        1
+
+Pane                               called packages atom packages
+  ::split                          ∞      0        0
+  ::focus                          ∞      0        0
+  ::destroy                        ∞      0        0
+  ::activateItem                   26     23       2
+  ::blur                           18     6        1
+  ::getPanes                       14     11       2
+  ::removeItem                     6      6        2
+  ::isActive                       3      2        0
+  ::activateItemAtIndex            3      3        0
+  ::getActiveItemIndex             2      1        1
+  ::getViewClass                   1      1        1
+  ::constructor                    1      1        1
+
+Project                            called packages atom packages
+  ::open                           ∞      0        0
+  ::eachEditor                     142    112      13
+  ::registerOpener                 41     39       10
+  ::getEditors                     24     20       2
+  ::constructor                    14     7        3
+  ::openSync                       10     7        0
+  ::getBuffers                     6      6        2
+  ::eachBuffer                     4      4        2
+  ::unregisterOpener               3      3        1
+  ::isPathModified                 1      1        0
+  ::bufferForPath                  1      1        0
+
+ScrollView                         called packages atom packages
+  ::initialize                     76     25       1
+
+SelectListView                     called packages atom packages
+  ::cancelled                      8      1        0
+  ::selectPreviousItemView         6      2        0
+  ::selectNextItemView             6      2        0
+  ::selectItemView                 4      3        0
+  .content                         2      2        0
+  ::confirmSelection               2      2        0
+
+Selection                          called packages atom packages
+  ::destroy                        ∞      0        0
+  ::indent                         402    211      8
+  ::finalize                       16     3        1
+  ::getHeadBufferPosition          11     3        0
+  ::getTailBufferPosition          4      1        0
+  ::constructor                    2      1        0
+  ::modifySelection                2      1        0
+  ::backspaceToBeginningOfWord     1      1        0
+  ::screenRangeChanged             1      1        0
+
+Syntax                             called packages atom packages
+  ::constructor                    23     7        0
+  ::propertiesForScope             10     10       2
+  ::addProperties                  1      1        1
+  ::removeProperties               1      1        1
+
+Task                               called packages atom packages
+  ::handleEvents                   22     5        0
+
+WorkspaceView                      called packages atom packages
+  ::getActivePane                  196    103      13
+  ::getActivePaneItem              106    53       10
+  ::initialize                     76     25       1
+  ::getPanes                       14     11       2
+  ::getEditorViews                 13     13       0
+  ::setTitle                       5      4        0
+  ::eachPane                       5      5        3
+  ::beforeRemove                   4      3        0
+  ::afterAttach                    3      3        0
+
+Workspace                          called packages atom packages
+  ::openSync                       10     7        0
+  ::openUriInPane                  4      4        0
+  ::constructor                    1      1        0
+
+Grammar                            called packages atom packages
+  ::activate                       ∞      0        0
+  ::deactivate                     39     17       2
+  ::createPattern                  4      3        0
+  ::createToken                    3      3        0
+  ::constructor                    1      1        1
+  ::getScore                       1      1        0
+
+GrammarRegistry                    called packages atom packages
+  ::createToken                    3      3        0
+
+File                               called packages atom packages
+  ::setPath                        11     9        0
+  ::readSync                       6      4        0
+
+View                               called packages atom packages
+  ::pushStack                      ∞      0        0
+  ::end                            ∞      0        0
+  .render                          44     27       2
+  ::constructor                    4      4        1
+
+Marker                             called packages atom packages
+  ::update                         ∞      0        0
+  ::constructor                    3      3        1
+
+Point                              called packages atom packages
+  ::constructor                    ∞      0        0
+  ::add                            ∞      0        0
+
+Range                              called packages atom packages
+  ::add                            ∞      0        0
+  ::translate                      ∞      0        0
+  ::constructor                    92     37       5
+
+TextBuffer                         called packages atom packages
+  ::load                           ∞      0        0
+  ::destroy                        ∞      0        0
+  ::getPath                        399    156      17
+  ::change                         176    145      7
+  ::retain                         60     3        0
+  ::release                        33     5        2
+  ::getBaseName                    11     6        1
+  ::isAlive                        1      1        1
+  ::matchesInCharacterRange        1      1        0
