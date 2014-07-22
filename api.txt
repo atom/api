@@ -391,10 +391,6 @@ PackageManager                                                 called packages a
   ::isBundledPackage(name)                                     1      1        1
   ::getAvailablePackageMetadata()                              0      0        0
 
-PaneView                                                       called packages atom packages
-  ::getNextPane()                                              2      2        0
-  ::getContainer()                                             1      1        1
-
 Pane                                                           called packages atom packages
   ::getActiveEditor()                                          318    191      13
   ::activate()                                                 92     61       2
