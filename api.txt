@@ -401,24 +401,11 @@ Pane                                                           called packages a
   ::addItem(item, index)                                       10     9        0
   ::getActiveItem()                                            8      6        0
   ::splitDown(params)                                          7      6        1
-  ::activateNextItem()                                         4      3        0
   ::moveItem(item, newIndex)                                   3      2        1
   ::moveItemToPane(item, pane, index)                          3      3        1
-  ::addItems(items, index)                                     2      2        0
   ::splitUp(params)                                            2      2        1
   ::splitLeft(params)                                          2      2        1
-  ::activateItemForUri(uri)                                    2      2        0
-  ::destroyActiveItem()                                        1      1        0
-  ::destroyItems()                                             1      1        0
-  ::promptToSaveItem(item)                                     1      1        0
-  ::saveItemAs(item, nextAction)                               0      0        0
-  ::saveItems()                                                0      0        0
-  ::saveActiveItemAs()                                         0      0        0
-  ::saveActiveItem()                                           0      0        0
-  ::destroyInactiveItems()                                     0      0        0
-  ::itemAtIndex(index)                                         0      0        1
-  ::activatePreviousItem()                                     0      0        0
-  ::saveItem(item, nextAction)                                 0      0        0
+  ::activateItem(item)                                         new    new      new
 
 Project                                                        called packages atom packages
   ::resolve(uri)                                               ∞      0        0
