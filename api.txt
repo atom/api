@@ -424,6 +424,7 @@ Pane                                                           called packages a
   ::activatePreviousItem()                                     0      0        0
   ::saveItem(item, nextAction)                                 0      0        0
   ::destroy()                                                  new    new      new
+  ::viewForItem(item)                                          new    new      new
 
 Project                                                        called packages atom packages
   ::resolve(uri)                                               ∞      0        0
