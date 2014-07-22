@@ -552,7 +552,6 @@ Workspace                                                      called packages a
   ::unregisterOpener(opener)                                   3      3        1
   ::prependToTop(element)                                      2      2        0
   ::appendToLeft(element)                                      1      1        1
-  ::destroyActivePane()                                        1      1        0
   ::activateNextPane()                                         1      1        0
   ::focusPaneBelow()                                           0      0        1
   ::focusPaneOnLeft()                                          0      0        1
