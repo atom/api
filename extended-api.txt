@@ -17,36 +17,37 @@ Editor (Extended)                                            called packages ato
 ::selectMarker(marker)                                       1      1        0
 ::decorationsForScreenRowRange(startScreenRow, endScreenRow) 0      0        0
 
-::getCursor()                                                103    43       6
 ::getCursors()                                               35     19       4
+::getCursor(index)                                           103    43       6
+::getLastCursor()                                            new    new    new
 ::getCursorScreenRow()                                       4      4        1
 ::getCursorScopes()                                          11     11       2
 ::bufferRangeForScopeAtCursor(selector)                      4      4        0
-::moveCursorToBottom()                                       4      1        0
-::moveCursorToBeginningOfNextParagraph()                     0      0        0
-::moveCursorToBeginningOfNextWord()                          1      1        1
-::moveCursorToFirstCharacterOfLine()                         8      7        5
+::moveToTop()                                                new    new    new
+::moveToBottom()                                             4      1        0
+::moveToFirstCharacterOfLine()                               8      7        5
+::moveToScreenPosition(position)                             new    new    new
+::moveToBeginningOfNextWord()                                1      1        1
+::moveToBeginningOfNextParagraph()                           0      0        0
+::moveToBeginningOfPreviousParagraph()                       new    new    new
 
 ::getSelections()                                            34     20       1
 ::getSelection(index)                                        114    71       6
 ::getLastSelection()                                         2      2        0
-::getLastSelectionInBuffer()                                 0      0        0
 ::getSelectionsOrderedByBufferPosition()                     2      1        0
-::addSelectionBelow()                                        0      0        0
-::addSelectionAbove()                                        0      0        0
-::splitSelectionsIntoLines()                                 0      0        0
 ::selectToPreviousWordBoundary()                             0      0        0
 ::selectToNextWordBoundary()                                 0      0        0
 ::selectToTop()                                              0      0        0
 ::selectToBottom()                                           0      0        0
-::mutateSelectedText(fn)                                     2      2        1
-::selectionIntersectsBufferRange(bufferRange)                0      0        0
-::selectToBeginningOfNextWord()                              0      0        1
 ::selectToFirstCharacterOfLine()                             1      1        1
 ::selectToScreenPosition(position)                           2      2        1
+::selectToBeginningOfNextWord()                              0      0        1
 ::selectToBeginningOfNextParagraph()                         0      0        0
 ::selectToBeginningOfPreviousParagraph()                     0      0        0
+::selectionIntersectsBufferRange(bufferRange)                0      0        0
+::mutateSelectedText(fn)                                     2      2        1
 
+::autoIndentSelectedRows()                                   3      3        1
 ::indentSelectedRows()                                       0      0        1
 ::outdentSelectedRows()                                      0      0        1
 ::indentLevelForLine(line)                                   3      1        0

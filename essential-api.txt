@@ -32,21 +32,23 @@ Editor                                                       called packages ato
 ::markBufferPosition(args...)                                2      2        0
 ::decorateMarker(marker, decorationParams)                   0      0        0
 
+::hasMultipleCursors()                                       2      2        1
 ::getCursorBufferPosition()                                  88     47       8
 ::setCursorBufferPosition(position, options)                 69     53       6
+::getCursorBufferPositions()                                 new    new    new
 ::getCursorScreenPosition()                                  18     14       3
 ::setCursorScreenPosition(position, options)                 8      5        1
+::getCursorScreenPositions()                                 new    new    new
 ::addCursorAtBufferPosition(bufferPosition)                  2      2        0
 ::addCursorAtScreenPosition(screenPosition)                  0      0        0
-::hasMultipleCursors()                                       2      2        1
-::moveCursorToBeginningOfLine()                              14     7        1
-::moveCursorToEndOfLine()                                    9      7        1
-::moveCursorToBeginningOfWord()                              1      1        1
-::moveCursorToEndOfWord()                                    0      0        0
-::moveCursorUp(lineCount)                                    10     6        1
-::moveCursorDown(lineCount)                                  10     8        1
-::moveCursorLeft()                                           18     5        2
-::moveCursorRight()                                          1      1        2
+::moveToBeginningOfLine()                                    14     7        1 # renamed to remove 'Cursor'
+::moveToEndOfLine()                                          9      7        1 # same for all move methods
+::moveToBeginningOfWord()                                    1      1        1
+::moveToEndOfWord()                                          0      0        0
+::moveUp(lineCount)                                          10     6        1
+::moveDown(lineCount)                                        10     8        1
+::moveLeft()                                                 18     5        2
+::moveRight()                                                1      1        2
 
 ::getSelectedText()                                          59     46       3
 ::getSelectedBufferRange()                                   26     23       5
@@ -56,10 +58,11 @@ Editor                                                       called packages ato
 ::getSelectedScreenRange()                                   1      1        0
 ::setSelectedScreenRange(screenRange, options)               0      0        0
 ::getSelectedScreenRanges()                                  0      0        0
+::setSelectedScreenRanges(screenRange, options)              new    new    new
 ::addSelectionForBufferRange(bufferRange, options)           10     6        1
-::getSelectedBufferRanges()                                  18     14       2
+::addSelectionForScreenRange(screenRange, options)           new    new    new
 ::selectAll()                                                7      6        2
-::selectLine()                                               10     8        1
+::selectCurrentLine()                                        10     8        1  # renamed from selectLine
 ::selectToBeginningOfLine()                                  1      1        1
 ::selectToEndOfLine()                                        9      5        1
 ::selectWord()                                               10     6        2
@@ -69,7 +72,6 @@ Editor                                                       called packages ato
 ::selectDown(rowCount)                                       6      5        1
 ::selectLeft()                                               7      1        1
 ::selectRight()                                              2      1        1
-::autoIndentSelectedRows()                                   3      3        1
 
 ::cutSelectedText()                                          9      6        0
 ::copySelectedText()                                         6      5        0
