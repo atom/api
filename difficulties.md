@@ -5,9 +5,13 @@ I want to compile a list of instances where the API is confusing.
 * What are people complaining about?
 * What are people screwing up in their packages?
 
-## Links to explicit issues
+## Links to problems / talk about package writing
 
-http://gnuu.org/2014/03/10/my-week-with-githubs-atom-editor/
+* http://gnuu.org/2014/03/10/my-week-with-githubs-atom-editor/
+
+
+* https://discuss.atom.io/t/how-to-speed-up-your-packages/10903
+* https://discuss.atom.io/t/looking-for-best-practices-for-iterative-development-on-atom/10889
 
 ## What sucks
 
