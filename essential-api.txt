@@ -1,0 +1,101 @@
+Editor                                                       called packages atom packages
+::getText()                                                  ∞      0        0
+::setText(text)                                              121    72       8
+::getTextInBufferRange(range)                                51     34       5
+::setTextInBufferRange(range, text, normalizeLineEndings)    49     31       4
+::getWordUnderCursor(options)                                17     9        0
+::lineForBufferRow(row)                                      31     11       2
+
+::save()                                                     31     17       1
+::saveAs(filePath)                                           1      1        0
+::getPath()                                                  403    159      17
+
+::getGrammar()                                               113    76       6
+::setGrammar(grammar)                                        9      7        1
+::scopesForBufferPosition(bufferPosition)                    11     11       2
+
+::deleteLine()                                               4      4        0
+::backspace()                                                5      5        1
+::delete()                                                   33     20       3
+::insertText(text, options)                                  390    103      5
+::insertNewlineAbove()                                       2      2        1
+::insertNewline()                                            16     10       0
+::insertNewlineBelow()                                       189    5        1
+
+::undo()                                                     17     3        1
+::redo()                                                     16     2        0
+::transact(fn)                                               28     15       7
+
+::markScreenRange(args...)                                   4      3        1
+::markScreenPosition(args...)                                0      0        0
+::markBufferRange(args...)                                   7      5        6
+::markBufferPosition(args...)                                2      2        0
+::decorateMarker(marker, decorationParams)                   0      0        0
+
+::getCursorBufferPosition()                                  88     47       8
+::setCursorBufferPosition(position, options)                 69     53       6
+::getCursorScreenPosition()                                  18     14       3
+::setCursorScreenPosition(position, options)                 8      5        1
+::addCursorAtBufferPosition(bufferPosition)                  2      2        0
+::addCursorAtScreenPosition(screenPosition)                  0      0        0
+::hasMultipleCursors()                                       2      2        1
+::moveCursorToBeginningOfLine()                              14     7        1
+::moveCursorToEndOfLine()                                    9      7        1
+::moveCursorToBeginningOfWord()                              1      1        1
+::moveCursorToEndOfWord()                                    0      0        0
+::moveCursorUp(lineCount)                                    10     6        1
+::moveCursorDown(lineCount)                                  10     8        1
+::moveCursorLeft()                                           18     5        2
+::moveCursorRight()                                          1      1        2
+
+::getSelectedText()                                          59     46       3
+::getSelectedBufferRange()                                   26     23       5
+::setSelectedBufferRange(bufferRange, options)               21     20       8
+::getSelectedBufferRanges()                                  18     14       2
+::setSelectedBufferRanges(bufferRanges, options)             22     10       3
+::getSelectedScreenRange()                                   1      1        0
+::setSelectedScreenRange(screenRange, options)               0      0        0
+::getSelectedScreenRanges()                                  0      0        0
+::addSelectionForBufferRange(bufferRange, options)           10     6        1
+::getSelectedBufferRanges()                                  18     14       2
+::selectAll()                                                7      6        2
+::selectLine()                                               10     8        1
+::selectToBeginningOfLine()                                  1      1        1
+::selectToEndOfLine()                                        9      5        1
+::selectWord()                                               10     6        2
+::selectToBeginningOfWord()                                  2      2        1
+::selectToEndOfWord()                                        2      1        1
+::selectUp(rowCount)                                         4      4        1
+::selectDown(rowCount)                                       6      5        1
+::selectLeft()                                               7      1        1
+::selectRight()                                              2      1        1
+::autoIndentSelectedRows()                                   3      3        1
+
+::cutSelectedText()                                          9      6        0
+::copySelectedText()                                         6      5        0
+::pasteText(options)                                         2      2        0
+
+::screenPositionForBufferPosition(bufferPosition, options)   6      2        1
+::bufferPositionForScreenPosition(screenPosition, options)   4      3        0
+::screenRangeForBufferRange(bufferRange)                     7      6        1
+::bufferRangeForScreenRange(screenRange)                     1      1        1
+
+::getTabLength()                                             9      6        0
+::setSoftTabs(softTabs)                                      8      5        0
+::getSoftTabs()                                              0      0        0
+::setTabLength(tabLength)                                    8      5        0
+::getSoftWrap()                                              1      1        1
+::setSoftWrap(softWrap)                                      2      2        0
+
+::indentationForBufferRow(bufferRow)                         21     4        0
+::setIndentationForBufferRow(bufferRow, newLevel, undefined) 3      2        0
+
+::isFoldedAtBufferRow(bufferRow)                             2      1        1
+::foldAll()                                                  0      0        0
+::unfoldAll()                                                0      0        0
+::foldBufferRow(bufferRow)                                   0      0        0
+::unfoldBufferRow(bufferRow)                                 0      0        0
+::isFoldableAtBufferRow(bufferRow)                           0      0        0
+
+::isBufferRowCommented(bufferRow)                            5      3        0
+::toggleLineCommentsInSelection()                            2      2        0

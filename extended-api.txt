@@ -1,0 +1,83 @@
+Editor (Extended)                                            called packages atom packages
+::getLongTitle()                                             1      1        1
+::getUri()                                                   74     40       5
+::getTitle()                                                 56     35       4
+
+::shouldPromptToSave()                                       0      0        0
+
+::deleteToEndOfLine()                                        0      0        0
+::deleteToBeginningOfLine()                                  0      0        0
+::deleteToEndOfWord()                                        1      1        0
+::deleteToBeginningOfWord()                                  0      0        0
+
+::getMarkers()                                               1      1        0
+::getMarker(id)                                              1      1        0
+::getMarkerCount()                                           0      0        0
+::findMarkers(properties)                                    2      2        3
+::selectMarker(marker)                                       1      1        0
+::decorationsForScreenRowRange(startScreenRow, endScreenRow) 0      0        0
+
+::getCursor()                                                103    43       6
+::getCursors()                                               35     19       4
+::getCursorScreenRow()                                       4      4        1
+::getCursorScopes()                                          11     11       2
+::bufferRangeForScopeAtCursor(selector)                      4      4        0
+::moveCursorToBottom()                                       4      1        0
+::moveCursorToBeginningOfNextParagraph()                     0      0        0
+::moveCursorToBeginningOfNextWord()                          1      1        1
+::moveCursorToFirstCharacterOfLine()                         8      7        5
+
+::getSelections()                                            34     20       1
+::getSelection(index)                                        114    71       6
+::getLastSelection()                                         2      2        0
+::getLastSelectionInBuffer()                                 0      0        0
+::getSelectionsOrderedByBufferPosition()                     2      1        0
+::addSelectionBelow()                                        0      0        0
+::addSelectionAbove()                                        0      0        0
+::splitSelectionsIntoLines()                                 0      0        0
+::selectToPreviousWordBoundary()                             0      0        0
+::selectToNextWordBoundary()                                 0      0        0
+::selectToTop()                                              0      0        0
+::selectToBottom()                                           0      0        0
+::mutateSelectedText(fn)                                     2      2        1
+::selectionIntersectsBufferRange(bufferRange)                0      0        0
+::selectToBeginningOfNextWord()                              0      0        1
+::selectToFirstCharacterOfLine()                             1      1        1
+::selectToScreenPosition(position)                           2      2        1
+::selectToBeginningOfNextParagraph()                         0      0        0
+::selectToBeginningOfPreviousParagraph()                     0      0        0
+
+::indentSelectedRows()                                       0      0        1
+::outdentSelectedRows()                                      0      0        1
+::indentLevelForLine(line)                                   3      1        0
+
+::isFoldedAtCursorRow()                                      0      0        1
+::foldAllAtIndentLevel(level)                                0      0        0
+::unfoldCurrentRow()                                         0      0        0
+::foldCurrentRow()                                           0      0        0
+::foldSelectedLines()                                        0      0        0
+::toggleFoldAtBufferRow(bufferRow)                           0      0        0
+::isFoldedAtScreenRow(screenRow)                             0      0        0
+
+::usesSoftTabs()                                             0      0        0
+::getTabText()                                               4      4        0
+::toggleSoftTabs()                                           0      0        0
+::toggleSoftWrap()                                           0      0        0
+::getSoftWrapColumn()                                        0      0        0
+
+::beginTransaction()                                         10     8        2
+::commitTransaction()                                        5      4        1
+::abortTransaction()                                         4      4        1
+
+::clipBufferRange(range)                                     0      0        0
+::clipScreenPosition(screenPosition, options)                1      1        0
+::clipBufferPosition(bufferPosition)                         3      1        1
+
+::getCurrentParagraphBufferRange()                           2      2        1
+::getLastBufferRow()                                         3      2        1
+::getLineCount()                                             8      6        3
+::lineLengthForBufferRow(row)                                36     24       3
+
+::transpose()                                                10     6        0
+::upperCase()                                                1      1        0
+::lowerCase()                                                1      1        0

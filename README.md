@@ -1,7 +1,7 @@
 api
 ===
 
-Textual representation of the Atom API
+Textual representation of the Atom API generated via https://github.com/probablycorey/atom-api
 
 why
 ===
