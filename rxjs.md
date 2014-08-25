@@ -1,8 +1,19 @@
-# RxJS and Atom
+# Observables
 
-[RxJS][rxjs] is build around the concept of "observables", which are first class objects representing streams of zero or more values. In Atom, we have two situations in which such facilities would be useful.
+## Abstract
 
-## Events
+We have many situations where we need to subscribe to streams of events, such as discrete events like `did-insert-text`, properties with values that change over time, and collections with contents that change over time. The concept of *observables* unifies all these callback-oriented patterns in a single compositional framework. The [RxJS][rxjs] library provides a mature and full-featured implementation of the observables concept, and I'd like to try using it in Atom.
+
+## Tasks
+
+* [ ] Benchmark to make sure overhead is acceptable in simple use cases
+* [ ] Replace workspace events with `::onX` methods that return observables
+* [ ] Replace workspace behaviors with `::observeX` that return observables
+* [ ] Replace workspace `::eachX` methods with `::observeX` methods
+
+## Description
+
+### Events
 
 We currently implement events via emissary's `Emitter` mixin. In the following example, we use `::on` to subscribe to all changes and `::once` to subscribe to the next change. Both methods return subscriptions which can be disposed with
 
@@ -34,7 +45,7 @@ subscription = observable.take(1).subscribe -> # ...
 subscription = editor.onTextDidChange().throttle(500).subscribe -> # ...
 ```
 
-## Properties That Change
+### Properties That Change
 
 In addition to events, we also need to track values that change over time. Observables are a great tool for this as well, and could replace `emissary` behaviors. For any model property `foo`, we could have an `observeFoo` method along with `getFoo` and `setFoo`. This would return an observable based on the current value of the property. Whenever someone subscribed, the `onNext` callback would be called immediately with the current value, then again whenever the value changed.
 
@@ -61,7 +72,7 @@ class Workspace
       activePane.observeActiveItem()
 ```
 
-## Collections That Change
+### Collections That Change
 
 In addition to properties that change, we also deal with collections that change, such as the current panes, pane items, text editors, etc. These can also be modeled as observables. In the following example, `::observePanes` returns an observable that yields every current and future pane to observers.
 
@@ -96,7 +107,7 @@ class Workspace
         item.getTypeDescriptor?().matches(selector)
 ```
 
-## Conclusion
+### Conclusion
 
 RxJS provides a rich, seemingly mature library for working with streaming data in a compositional manner. We can utilize it in the following scenarios:
 
